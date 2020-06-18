@@ -1,5 +1,5 @@
 # default configuration
-baseURL = ""
+baseURL = "web.iiit.ac.in/~ansh.puvvada/astronomy_club"
 languageCode = "en-us"
 summaryLength = "10"
 title = "IIIT-H Astronomy Club"
