@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 
-<div class="hero-image" style="  background-image: url({{`images/backgrounds/index.png`| relURL}});">
+<div class="hero-image" style="  background-image: url(images/backgrounds/index.png);">
     <div class="hero-text">
 
         <h1 class="text-white font-tertiary" style="font-family: pixie;text-transform: uppercase;">{{ .Title | safeHTML }}</h1>
@@ -18,7 +18,7 @@
                 {{ with .Site.Data.homepage.about }}
                 <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
                 {{ with .button }}
-                <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.btnText}}</a> {{ end }} {{ end }}
+                <a href="{{ .URL }}" class="btn btn-transparent">{{.btnText}}</a> {{ end }} {{ end }}
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@
             {{ range first 9 .Site.Data.homepage.upcoming_events.item }}
             <div class="col-lg-4 col-6 mb-4 shuffle-item">
                 <div class="position-relative rounded hover-wrapper">
-                    <img src="{{.image | absURL }}" alt="portfolio-image" class="img-fluid rounded d-block" height="100%" width="100%">
+                    <img src="{{.image }}" alt="portfolio-image" class="img-fluid rounded d-block" height="100%" width="100%">
                     <div class="hover-overlay">
                         <div class="hover-content">
                             <p class="btn btn-light btn-sm">{{ .eventTitle }}</p><br>

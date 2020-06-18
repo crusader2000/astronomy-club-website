@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "http://examplesite.com"
+baseURL = ""
 languageCode = "en-us"
 summaryLength = "10"
 title = "IIIT-H Astronomy Club"
